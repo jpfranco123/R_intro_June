@@ -112,15 +112,15 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
 <p id="where">
   <strong>Where:</strong>
   {% if page.address2 %}
-  Day One ({{page.startdate}}) - {{page.address1}}; <p>
-  Day Two ({{page.enddate}}) - {{page.address2}}.
+  Day One ({{page.startdate}}) - {{page.address1}}; Day Two ({{page.enddate}}) - {{page.address2}}.
   {% else %}
   {{page.address1}}.
    {% endif %}
- <!-- Get directions with
+  Get directions with
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
-{% endif %}    
+{% endif %}
+   
 <!--  Day One <a href="//maps.google.com/maps?q={{page.day1latlng}}">directions</a>. 
   Day Two <a href="//maps.google.com/maps?q={{page.day2latlng}}">directions</a>.    
 </p>
