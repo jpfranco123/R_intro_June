@@ -1,26 +1,27 @@
+
 ---
 layout: workshop 
 root: .
 venue: University of Melbourne
-address1: Room 5.71, Melbourne Brain Centre, University of Melbourne, Parkville
-address2: Room G-10, Old Quad, University of Melbourne, Parkville
+address1: William Hearn Seminar Room, Room G09, The Old Quadrangle, University of Melbourne
+address2: Lab-14, 700 Swanston St, Carlton
 country: Australia
 language: en
 latlng: -37.797779, 144.961182
-humandate: Friday March 24 and Monday March 27, 2017
+humandate: September 13 and 15, 2016
 humantime: 9:00 am - 5:00 pm
-startdate: 2017-03-24
-enddate: 2017-03-27
+startdate: 2016-09-13
+enddate: 2016-09-15
 instructor: ["Brendan Ansell"]
 helper: ["Michael Silk", "David Wilkinson", "Luke Zappia", "Sohni Jain", "Molly Fredle", "Po Peng", "Anwar Hossain", "Harriet Dashnow"]
 contact: nicole.unimelb@gmail.com
-contact2:
-etherpad: https://public.etherpad-mozilla.org/p/Intro_to_R_March24
-eventbrite: 32174829782
+contact2: 
+etherpad: https://public.etherpad-mozilla.org/p/Introductory-R-Workshop-13Sept2016
+eventbrite: 27109602551
 survey1: http://goo.gl/forms/kG0Ma5FR37
 survey2: http://goo.gl/forms/AQdU9I3Z3l
 wifiUsername: introductoryrrstudioworkshop
-wifiPassword: TBC
+wifiPassword: Jca55i
 ---
 
 
@@ -119,11 +120,6 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
-   
-<!--  Day One <a href="//maps.google.com/maps?q={{page.day1latlng}}">directions</a>. 
-  Day Two <a href="//maps.google.com/maps?q={{page.day2latlng}}">directions</a>.    
-</p>
-{% endif %} -->
 
 
 <!--
@@ -131,13 +127,10 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> <strong>**Participants must bring a laptop and charger**  </strong> with a 
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
+  <strong>Requirements:</strong> <strong>**Participants must bring a laptop**</strong> with a 
+  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. 
-<p> Participants are also asked to install R, and the RStudio IDE prior to the workshop. See instructions below, 
-  and on the <a href="https://public.etherpad-mozilla.org/p/Intro_to_R_March24">EtherPad</a>.
 </p>
-        
 
 <!--
   CONTACT EMAIL ADDRESS
@@ -180,9 +173,9 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Friday March 24th</h3>
+    <h3>Tuesday September 13th</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Introduction"</td> </tr>
+      <tr> <td>09:00</td>  <td>Introduction and access to R through "Data Intensive Tools for the Cloud (DIT4C)"</td> </tr>
       <tr> <td>10:00</td> <td>Intro to R and how to find help</td> </tr>
       <tr> <td>11:00</td>  <td>Data structures</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
@@ -193,7 +186,7 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Monday March 27th</h3>
+    <h3>Thursday September 15th</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Setup</td> </tr>
       <tr> <td>09:30</td>  <td>Vectorisation</td> </tr>
@@ -270,7 +263,6 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
   'tools/check' as well.
 -->
 <!-- <h2 id="syllabus">Syllabus</h2>
-
 <div class="row">
   <div class="col-md-6">
     <h3 id="syllabus-shell">The Unix Shell</h3>
@@ -324,7 +316,6 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
    </div>
    -->
 <!--</div>
-
 <div class="row">
   <div class="col-md-6">
     <h3 id="syllabus-git">Version Control with Git</h3>
@@ -357,7 +348,6 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
   </div>
   -->
 <!--</div>
-
 <hr/> -->
 
 <!--
@@ -375,7 +365,6 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
 <p>
   <strong>Requirements:</strong>
   <strong>**Participants will be required to bring their own laptop**</strong>,
-  <!--
   from which they will logon to the
   <a href="http://resbaz.cloud.edu.au/ ">Data Intensive Tools for the Cloud</a>
   (DIT4C) environment on the
@@ -389,16 +378,14 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
 
 <p>
   <strong>Wifi:</strong>
-  Guest WIFI access will be provided for participants not affiliated with the University of Melbourne.
-
-<!--  If you're bringing a wifi device to the workshop,
+  If you're bringing a wifi device to the workshop,
   access to the wifi network will depend on whether you're affiliated with the Univerity of Melbourne.
   University of Melbourne staff/students can connect to the UniWireless network;
   instructions on how to do this and where to get assistance can be found
   <a href="https://its.unimelb.edu.au/help/networks-access/networks-internet/connect-wireless/unimelb">here</a>.
   Attendees from other Australian universities should find out (from the IT website of
   their home institution) how to connect to the Eduroam wireless network.
-</p> -->
+</p> 
 {% if page.wifiPassword%}
 For visitors who are not from a tertiary institution, the visitor login details for the Visitor network are: <ul>
 <li>network: {{page.wifiUsername}}  </li>
@@ -420,12 +407,10 @@ For visitors who are not from a tertiary institution, the visitor login details 
 
 <!-- <div id="shell"> <!-- Start of 'shell' section. -->
 <!--  <h3>The Bash Shell</h3>
-
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
     tasks more quickly.
   </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
@@ -500,7 +485,6 @@ For visitors who are not from a tertiary institution, the visitor login details 
 <!-- <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
 <!--  <h3>Git</h3>
-
   <p>
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
@@ -510,7 +494,6 @@ For visitors who are not from a tertiary institution, the visitor login details 
     web browser (current versions of Chrome, Firefox or Safari,
     or Internet Explorer version 9 or above).
   </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
@@ -546,7 +529,6 @@ For visitors who are not from a tertiary institution, the visitor login details 
 
 <!--<div id="editor"> <!-- Start of 'editor' section. -->
 <!--  <h3>Text Editor</h3>
-
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
@@ -556,7 +538,6 @@ For visitors who are not from a tertiary institution, the visitor login details 
     typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
     exclamation mark), then hitting Return to return to the shell.
   </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
@@ -609,7 +590,6 @@ For visitors who are not from a tertiary institution, the visitor login details 
            the IPython notebook.
            Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
 <!--  <h3>Python</h3>
-
   <p>
     <a href="http://python.org">Python</a> is a popular language for
     scientific computing, and great for general-purpose programming as
@@ -618,13 +598,11 @@ For visitors who are not from a tertiary institution, the visitor login details 
     <a href="https://www.continuum.io/anaconda">Anaconda</a>,
     an all-in-one installer.
   </p>
-
     <p>
       Regardless of how you choose to install it,
       <strong>please make sure you install Python version 3.x</strong>
       (e.g., 3.4 is fine).
     </p>
-
     <p>
       We will teach Python using the IPython notebook, a programming environment
       that runs in a web browser. For this to work you will need a reasonably
@@ -634,7 +612,6 @@ For visitors who are not from a tertiary institution, the visitor login details 
       (some older browsers, including Internet Explorer version 9
       and below, are not).
     </p>
-
   <div class="row">
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
@@ -794,3 +771,4 @@ For visitors who are not from a tertiary institution, the visitor login details 
   </ol>
 </div>
 -->
+Contact GitHub API Training Shop Blog About
