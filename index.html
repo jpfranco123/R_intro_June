@@ -3,24 +3,23 @@ layout: workshop
 root: .
 venue: University of Melbourne
 address1: COLAB (Room 329), Level 3, ERC, Building 171, University of Melbourne, Parkville
-address2: COLAB (Room 329), Level 3, ERC, Building 171, University of Melbourne, Parkville
 country: Australia
 language: en
-latlng: -37.47568 144.57461
-humandate: Tuesday October 3 and Friday October 6, 2017.
-humantime: 9:00 am - 5:00 pm
-startdate: 2017-10-03
-enddate: 2017-10-06
-instructor: ["Pablo Franco"]
-helper: ["David Wilkinson","Meghana Kulkarni","Miriam Yeung","Michael Silk","Luke Zappia","Lucy Liu","Himani Jayawardane","Maddy Kelly", "Francisca Samsing","Thomas Teoh","Johnathan Pojer","Sadia Nawaz"]
-contact: pablo.franco.dn@gmail.com
-contact2: nicole.unimelb@gmail.com
-etherpad: https://public.etherpad-mozilla.org/p/Intro2R_May17
-eventbrite: 37825711722
+latlng: -37.798305, 144.958370
+humandate: November 8 and 10, 2017
+humantime: 9:30 am - 5:00 pm
+startdate: 2017-11-08
+enddate: 2017-11-10
+instructor: ["Lucy Liu"]
+helper: ["David Wilkinson", "Thomas Teoh", "Veatrissa Lim", "Benjamin Wee", "Peter Eze", "Miriam Yeung", "Himani Wijenayaka Jayawardane"]
+contact: nicole.unimelb@gmail.com
+contact2: lucy.resbaz@gmail.com
+eventbrite: https://www.eventbrite.com.au/e/introduction-to-rrstudio-tickets-38923704849
 survey1: http://goo.gl/forms/kG0Ma5FR37
 survey2: http://goo.gl/forms/AQdU9I3Z3l
-wifiUsername: seminar
-wifiPassword: &6bFr0
+wifiUsername: rworkshop
+wifiPassword: yo@1LX
+etherpad: https://docs.google.com/document/d/1SBkvNayajwAU7haYyHtBFwkevNTc5fcIw1RlYBFK4yg/edit
 ---
 
 
@@ -52,7 +51,7 @@ Main things to edit include:
 -->
 {% if page.eventbrite %}
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  src="https://www.eventbrite.com.au/e/introduction-to-rrstudio-tickets-38923704849"
   frameborder="0"
   width="100%"
   height="248px"
@@ -77,6 +76,7 @@ R is commonly used in many scientific disciplines for statistical analysis and i
 The emphasis of these materials is to give attendees a strong foundation in the fundamentals of R, 
 and to teach best practices for scientific computing: breaking down analyses into modular units, task automation, and encapsulation.
 </p>
+
 <p>
 Note that this workshop will focus on teaching the fundamentals of the programming language R, and will <b><u>not</u></b> teach statistical analysis. If you would like help with your statistical analysis, you can contact the <a href="http://www.scc.ms.unimelb.edu.au/">Statistical Consulting Centre</a> for one-on-one consultations or see their <a href="SCS_2016 leaflet_PG_R17.pdf">flyer</a> for details of statistical training courses.</p>
 <p>
@@ -97,9 +97,8 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
   The course is aimed at graduate students and other researchers. 
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong> However, if you have no previous programming experience, we recommend that you
-    consult the course material for 
-  <a href="https://nikkirubinstein.gitbooks.io/resguides-introductory-programming-concepts/content/content/welcome-to-coding.html">introduction to programming concepts workshop</a> 
-  prior to attending the current workshop.
+    consult the course materials for 
+  <a href="https://nikkirubinstein.gitbooks.io/resguides-introductory-programming-concepts/content/content/welcome-to-coding.html">introduction to programming concepts</a> prior to attending the current workshop.
 </p>
 
 <!--
@@ -113,8 +112,7 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
 <p id="where">
   <strong>Where:</strong>
   {% if page.address2 %}
-  Day One ({{page.startdate}}) - {{page.address1}}; <p> 
-  Day Two ({{page.enddate}}) - {{page.address2}}.
+  Day One ({{page.startdate}}) - {{page.address1}}; Day Two ({{page.enddate}}) - {{page.address2}}.
   {% else %}
   {{page.address1}}.
    {% endif %}
@@ -129,12 +127,10 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> <strong>**Participants must bring a laptop and charger**  </strong> with a 
+  <strong>Requirements:</strong> <strong>**Participants must bring a laptop**</strong> with a 
   Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. 
-<p> Participants are also asked to install R, and the RStudio IDE prior to the workshop (See <a href='https://resbaz.github.io/installRinstructions/'> instructions </a>).
+  on. Participants are also asked to install R, and the RStudio IDE prior to the workshop (details below).
 </p>
-
 
 <!--
   CONTACT EMAIL ADDRESS
@@ -172,34 +168,40 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
 <p>Please be sure to complete these surveys at the end of each day of the workshop.</p>
 <p><a href="{{page.survey1}}">End of first day survey</a></p>
 <p><a href="{{page.survey2}}">End of second day survey</a></p>
-<!--<p><a href='{{ site.swc_pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></p>
+<!--<p><a href='{{ site.
+
+
+
+
+
+_pre_survey }}{{ site.github.project_title }}'>Pre-workshop Survey</a></p>
 <p><a href='{{ site.swc_post_survey }}{{ site.github.project_title }}'>Post-workshop Survey</a></p>-->
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Friday 24th March</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Introduction"</td> </tr>
-      <tr> <td>10:00</td> <td>Intro to R and how to find help</td> </tr>
-      <tr> <td>11:30</td>  <td>Data structures</td> </tr>
-      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:30</td>  <td>Reading and subsetting data</td> </tr>
-      <tr> <td>15:15</td>  <td>Functions</td> </tr>
+      <tr> <td>09:30</td>  <td>Introduction</td> </tr>
+      <tr> <td>10:00</td>  <td>Intro to R and how to find help</td> </tr>
+      <tr> <td>10:45</td>  <td>Data structures</td> </tr>
+      <tr> <td>12:15</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>Functions</td> </tr>
+      <tr> <td>14:30</td>  <td>Subsetting</td> </tr>
+      <tr> <td>15:30</td>  <td>Plotting data using ggplot2</td> </tr>
       <tr> <td>16:45</td>  <td>Wrap up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h3>Monday 27th March</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Setup</td> </tr>
-      <tr> <td>09:15</td>  <td>Plotting data using ggplot2</td> </tr>
-      <tr> <td>10:15</td>  <td>Vectorisation</td> </tr>
-      <tr> <td>11:15</td>  <td>Control flow ("if" and "for" statements)</td> </tr>
-      <tr> <td>12:45</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:45</td>  <td>Writing data and figures</td> </tr>
+      <tr> <td>09:30</td>  <td>Setup</td> </tr>
+      <tr> <td>09:45</td>  <td>Control flow ("if" and "else" statements)</td> </tr>
+      <tr> <td>11:15</td>  <td>Dataframe manipulation using dplyr</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:15</td>  <td>Writing data and figures</td> </tr>
       <!--<tr> <td>13:30</td>  <td>Split-apply-combine</td> </tr> -->
-      <tr> <td>14:15</td>  <td>Dataframe manipulation using dplyr</td> </tr>
-      <tr> <td>15:45</td>  <td>Twitter Data</td></tr>
+      <tr> <td>14:00</td>  <td>dplyr & ggplot workflow</td> </tr>
+      <tr> <td>15:30</td>  <td>Discussion</td></tr>
       <!--<tr> <td>16:00</td>  <td>Github</td></tr> -->
       <tr> <td>16:45</td>  <td>Wrap up</td> </tr>
     </table>
@@ -241,16 +243,15 @@ Greg Wilson: "Software Carpentry: Lessons Learned". F1000Research, 2016, 3:62 (d
       http://pad.software-carpentry.org/YYYY-MM-DD-site
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
+-->
 {% if page.etherpad %}
 <p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
+  <strong>Google Docs:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
-</p>
+  We will use this Google Docs for chatting, taking notes, and sharing URLs and bits of code.</p>
 {% endif %}
+The etherpad log is also available in this (more stable) <a href="https://go.unimelb.edu.au/3ua6">google doc<a/>
 <hr/>
--->
-We will use this <a href="https://docs.google.com/document/d/1mdfaxp9EHWcL3FXDvMrm6Hv_MKrr124zk1olr4z_o6c/edit?usp=sharing">google doc</a> for taking notes, and sharing URLs and bits of code.
 
 <!--
   SYLLABUS
@@ -267,6 +268,7 @@ We will use this <a href="https://docs.google.com/document/d/1mdfaxp9EHWcL3FXDvM
   'tools/check' as well.
 -->
 <!-- <h2 id="syllabus">Syllabus</h2>
+
 <div class="row">
   <div class="col-md-6">
     <h3 id="syllabus-shell">The Unix Shell</h3>
@@ -320,6 +322,7 @@ We will use this <a href="https://docs.google.com/document/d/1mdfaxp9EHWcL3FXDvM
    </div>
    -->
 <!--</div>
+
 <div class="row">
   <div class="col-md-6">
     <h3 id="syllabus-git">Version Control with Git</h3>
@@ -352,6 +355,7 @@ We will use this <a href="https://docs.google.com/document/d/1mdfaxp9EHWcL3FXDvM
   </div>
   -->
 <!--</div>
+
 <hr/> -->
 
 <!--
@@ -368,7 +372,14 @@ We will use this <a href="https://docs.google.com/document/d/1mdfaxp9EHWcL3FXDvM
 
 <p>
   <strong>Requirements:</strong>
-  <strong>**Participants will be required to bring their own laptop and charger**</strong>
+  <strong>**Participants will be required to bring their own laptop**</strong> and charger.
+<!--  from which they will logon to the
+  <a href="http://resbaz.cloud.edu.au/ ">Data Intensive Tools for the Cloud</a>
+  (DIT4C) environment on the
+  <a href="http://cloud.nectar.org.au/">NeCTAR Research Cloud</a>.
+  This environment has all the required software pre-installed,
+  so there's nothing participants need to do in preparation for the workshop.
+  Instructions for connecting to DIT4C can be found <a href="dit4c_access.html">here.</a>
   <!--Having said that, there are software installation instructions <a href="#software_install">below</a>
   for participants who'd like to install the software on their own computer before or after the workshop.-->
 </p>
@@ -380,9 +391,7 @@ We will use this <a href="https://docs.google.com/document/d/1mdfaxp9EHWcL3FXDvM
   University of Melbourne staff/students can connect to the UniWireless network;
   instructions on how to do this and where to get assistance can be found
   <a href="https://its.unimelb.edu.au/help/networks-access/networks-internet/connect-wireless/unimelb">here</a>.
-  <!--Attendees from other Australian universities should find out (from the IT website of
-  their home institution) how to connect to the Eduroam wireless network.-->
-</p> 
+  </p> 
 {% if page.wifiPassword%}
 For visitors who are not from a tertiary institution, the visitor login details for the Visitor network are: <ul>
 <li>network: {{page.wifiUsername}}  </li>
@@ -404,10 +413,12 @@ For visitors who are not from a tertiary institution, the visitor login details 
 
 <!-- <div id="shell"> <!-- Start of 'shell' section. -->
 <!--  <h3>The Bash Shell</h3>
+
   <p>
     Bash is a commonly-used shell that gives you the power to do simple
     tasks more quickly.
   </p>
+
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
@@ -482,6 +493,7 @@ For visitors who are not from a tertiary institution, the visitor login details 
 <!-- <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
            is given at https://help.github.com/articles/supported-browsers/-->
 <!--  <h3>Git</h3>
+
   <p>
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
@@ -491,6 +503,7 @@ For visitors who are not from a tertiary institution, the visitor login details 
     web browser (current versions of Chrome, Firefox or Safari,
     or Internet Explorer version 9 or above).
   </p>
+
   <div class="row">
     <div class="col-md-4">
       <h4 id="git-windows">Windows</h4>
@@ -526,6 +539,7 @@ For visitors who are not from a tertiary institution, the visitor login details 
 
 <!--<div id="editor"> <!-- Start of 'editor' section. -->
 <!--  <h3>Text Editor</h3>
+
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
@@ -535,6 +549,7 @@ For visitors who are not from a tertiary institution, the visitor login details 
     typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
     exclamation mark), then hitting Return to return to the shell.
   </p>
+
   <div class="row">
     <div class="col-md-4">
       <h4 id="editor-windows">Windows</h4>
@@ -587,6 +602,7 @@ For visitors who are not from a tertiary institution, the visitor login details 
            the IPython notebook.
            Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
 <!--  <h3>Python</h3>
+
   <p>
     <a href="http://python.org">Python</a> is a popular language for
     scientific computing, and great for general-purpose programming as
@@ -595,11 +611,13 @@ For visitors who are not from a tertiary institution, the visitor login details 
     <a href="https://www.continuum.io/anaconda">Anaconda</a>,
     an all-in-one installer.
   </p>
+
     <p>
       Regardless of how you choose to install it,
       <strong>please make sure you install Python version 3.x</strong>
       (e.g., 3.4 is fine).
     </p>
+
     <p>
       We will teach Python using the IPython notebook, a programming environment
       that runs in a web browser. For this to work you will need a reasonably
@@ -609,6 +627,7 @@ For visitors who are not from a tertiary institution, the visitor login details 
       (some older browsers, including Internet Explorer version 9
       and below, are not).
     </p>
+
   <div class="row">
     <div class="col-md-4">
       <h4 id="python-windows">Windows</h4>
